@@ -1,0 +1,36 @@
+CREATE TRIGGER transaction 
+AFTER  
+UPDATE    
+ON saving_account  
+FOR EACH ROW
+DECLARE 
+  	prev_bal integer;
+    new_bal integer;
+    diff integer;
+    cid integer;
+    acc_no varchar(20);
+    t_id integer;
+    t_id=900;
+BEGIN  
+   prev_bal:= OLD.saving_balance;
+   new_bal:= NEW.saving_balance;
+   cid:=NEW.c_id;
+   acc_no:=SELECT acc_no from account_details WHERE c_id=cid;
+   IF new_bal>prev_bal THEN
+   		diff:=new_bal-prev_bal;
+   		insert into transaction values(CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,t_id,"acc_no","Savings",diff,new_bal,"Credit");
+        t_id=t_id+1;
+   ELSE
+   		diff:=prev_bal-new_bal;
+   		insert into transaction values(CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,t_id,"acc_no","Savings",diff,new_bal,"Debit");   
+        t_id=t_id+1;
+END; 
+
+
+BEGIN
+
+DECLARE SET @name:="Deep"
+DECLARE SET @sex:="male"
+DECLARE SET @address:="nowhere"
+	INSERT into a VALUES(@name,@sex,@address);
+END

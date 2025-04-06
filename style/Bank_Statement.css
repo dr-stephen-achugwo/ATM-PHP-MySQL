@@ -1,0 +1,33 @@
+#tab {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+#tab td, #tab th {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+}
+
+#tab tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tab tr:nth-child(odd) {
+    background-color: #ddd 
+}
+
+#tab th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #26c6da;
+    color: white;
+}
+
+div.trans_h2 {
+    text-align: center;
+    margin-top: 110px;
+}

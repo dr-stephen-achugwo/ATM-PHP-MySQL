@@ -1,0 +1,98 @@
+header.topsky {
+    text-align: center;
+    margin: 10px auto;
+}
+
+main.skydiv {
+    text-align: center;
+}
+
+form.formdiv {
+    margin-top: 30px;
+}
+
+.inputbox {
+    margin-bottom: 30px;
+}
+
+input {
+    width: 50%;
+    min-width: 370;
+    padding: 8px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #BBB;
+    box-sizing: border-box;
+    font-family: Cursive, Tahoma, sans-serif;
+    font-size: large;
+    background-color: #EEE;
+}
+
+.btnbox {
+    margin: 10px 0px;
+}
+
+button {
+    background-color: #4AE;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    min-width: 370px;
+}
+
+button:hover {
+    background-color: #26C;
+    color: #FF0;
+}
+
+button[type='reset'] {
+    background-color: #777;
+}
+
+button[type='reset']:hover {
+    background-color: #555;
+}
+
+#redbg {
+    background-color: #F22;
+}
+
+#redbg:hover {
+    background-color: #E00;
+}
+
+#greenbg {
+    background-color: #0C0;
+}
+
+#greenbg:hover {
+    background-color: #0A0;
+}
+
+.atmani {
+    font-family: cursive;
+    color: #00E;
+}
+
+.atmpay {
+    font-family: cursive;
+    color: #E00;
+}
+
+p.say {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    color: #06D;
+}
+
+footer.skybase {
+    text-align: center;
+    margin: 30px auto;
+    width: 50%;
+    min-width: 370px;
+}
